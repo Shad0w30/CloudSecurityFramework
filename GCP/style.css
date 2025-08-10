@@ -1,1 +1,47 @@
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #202124;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  background: #4285f4;
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+nav ul li a {
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #fbbc05;
+  color: #202124;
+}
+header {
+  text-align: center;
+  padding: 20px 10px;
+}
+header img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #4285f4;
+  font-size: 0.9em;
+  color: white;
+}
