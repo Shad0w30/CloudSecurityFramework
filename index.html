@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cloud Security Benchmarks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0078d4, #232f3e, #4285f4);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 30px;
+    }
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      background: white;
+      color: black;
+      transition: background 0.3s;
+    }
+    nav a.azure { color: white; background: #0078d4; }
+    nav a.aws { color: #232f3e; background: #ff9900; }
+    nav a.gcp { color: white; background: #4285f4; }
+    nav a:hover { opacity: 0.8; }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cloud Security Benchmarks</h1>
+    <p>Select a platform to view its security guidelines.</p>
+  </header>
+
+  <nav>
+    <a href="Azure/index.html" class="azure">Microsoft Azure</a>
+    <a href="AWS/index.html" class="aws">Amazon Web Services</a>
+    <a href="GCP/index.html" class="gcp">Google Cloud Platform</a>
+  </nav>
+
+  <footer>
+    <p>© 2025 Cloud Security Project</p>
+  </footer>
+</body>
+</html>
