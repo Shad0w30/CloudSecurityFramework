@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Azure Security Benchmark</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Azure Security & Architecture Framework</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="index.html" class="active">Azure</a></li>
-      <li><a href="../AWS/index.html">AWS</a></li>
-      <li><a href="../GCP/index.html">GCP</a></li>
-    </ul>
-  </nav>
-  
-  <header>
-    <!-- Inline Azure SVG Logo -->
-    <svg width="100" height="100" viewBox="0 0 64 64" aria-labelledby="azureTitle" role="img" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:10px;">
-      <title id="azureTitle">Microsoft Azure Logo</title>
-      <defs>
-        <linearGradient id="azureGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#0078D4"/>
-          <stop offset="100%" stop-color="#004E9F"/>
-        </linearGradient>
-      </defs>
-      <path fill="url(#azureGradient)" d="M32 0L12 64H27L64 0H32Z"/>
-      <path fill="#00BCF2" d="M25 32L32 16L39 32H25Z"/>
-    </svg>
-    <h1>Azure Security Benchmark</h1>
-  </header>
-  
-  <main>
-    <section>
-      <h2>Overview</h2>
-      <p>Security guidelines and best practices for Microsoft Azure cloud platform.</p>
-    </section>
-  </main>
+    <div class="cloud-bg" id="cloudBackground"></div>
+    
+    <div class="container">
+        <header>
+            <!-- Inline Azure logo SVG -->
+            <svg width="100" height="100" viewBox="0 0 64 64" aria-labelledby="azureTitle" role="img" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 30px; left: 30px;">
+              <title id="azureTitle">Microsoft Azure Logo</title>
+              <defs>
+                <linearGradient id="azureGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#0078D4"/>
+                  <stop offset="100%" stop-color="#004E9F"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#azureGradient)" d="M32 0L12 64H27L64 0H32Z"/>
+              <path fill="#00BCF2" d="M25 32L32 16L39 32H25Z"/>
+            </svg>
+            <h1>Azure Security & Architecture Framework</h1>
+            <p class="subtitle">Comprehensive security controls and best practices for Azure environments</p>
+        </header>
+        
+        <nav class="cloud-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Azure</a></li>
+                <li><a href="../AWS/index.html">AWS</a></li>
+                <li><a href="../GCP/index.html">GCP</a></li>
+            </ul>
+        </nav>
 
-  <footer>
-    <p>© 2025 Microsoft Azure Security Team</p>
-  </footer>
+        <input type="text" class="search-box" placeholder="Search security controls or best practices..." id="searchBox" />
+        
+        <div class="tabs" id="tabsContainer">
+            <!-- Tabs will be dynamically generated -->
+        </div>
+        
+        <div class="content-area" id="contentArea">
+            <!-- Content will be dynamically generated -->
+        </div>
+        
+        <footer>
+            <p>Azure Security & Architecture Framework | Updated: August 2025 | v1.0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
